@@ -1,0 +1,41 @@
+/* ヘッダー */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: pink;
+}
+
+/* サイドバー */
+aside {
+  width: 200px;
+  height: 300px;
+  background-color: lavender;
+  float: left;
+}
+
+/* メイン */
+main {
+  width: calc(100% - 200px);
+  height: 300px;
+  background-color: #fff0f5;
+  float: left;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: lightgray;
+  clear: both;
+}
+
+/* テーブル中央配置 */
+table {
+  margin: auto;
+}
+
+/* 送信ボタン右寄せ */
+form div {
+  text-align: right;
+}
+
