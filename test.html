@@ -3,64 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>世界一甘いお店</title>
-  <!-- CSSファイルを読み込む -->
-  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="reset.css"> <!-- リセットCSS（装飾の初期化） -->
+  <link rel="stylesheet" href="test.css">  <!-- 自分のCSS -->
 </head>
 <body>
-  <div class="container">
-    
-    <aside>
+
+  <header>
+    <h2>世界一甘いお店</h2> <!-- ページのタイトル -->
+  </header>
+
+  <div class="container"> <!-- 全体をまとめる箱 -->
+
+    <aside> <!-- 左側のリンクメニュー -->
       <a href="#">トップ</a><br>
       <a href="#">新着情報</a><br>
-      <a href="#">オススメのスイーツ</a><br>
+      <a href="#">おすすめのスイーツ</a><br>
       <a href="#">お問い合わせ</a>
     </aside>
-    <main>
-      <h2>世界一甘いお店</h2>
-      <form>
-        <table border="4">
-      <tr>
-        <td>お名前</td>
-        <td><input type="text" size="40"></td>
-      </tr>
-      <tr>
-        <td>近くのお店</td>
-        <td>
-          <select>
-            <option>北海道・東北</option>
-            <option>関東</option>
-            <option>中部</option>
-            <option>関西</option>
-            <option>中国・四国</option>
-            <option>九州・沖縄</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>電話</td>
-        <td><input type="text" size="40"></td>
-      </tr>
-      <tr>
-        <td>メールアドレス</td>
-        <td><input type="text" size="40"></td>
-      </tr>
-      <tr>
-        <td>お問い合わせ種別</td>
-        <td>
-          <input type="radio" name="type" value="商品について"> 商品について
-          <input type="radio" name="type" value="従業員について"> 従業員について
-        </td>
-      </tr>
-      <tr>
-        <td>お問い合わせ内容</td>
-        <td><textarea cols="30" rows="5" placeholder="詳細を入力してください"></textarea></td>
-      </tr>
-    </table>
 
-    <!-- 送信ボタン -->
-    <div>
-      <input type="submit" value="送信">
-    </div>
-  </form>
+    <main> <!-- 右側のメインコンテンツ -->
+      <form>
+        <table border="1">
+          <tr>
+            <td>お名前</td>
+            <td><input type="text" name="name"></td>
+          </tr>
+          <tr>
+            <td>近くのお店</td>
+            <td>
+              <select name="area">
+                <option>北海道・東北</option>
+                <option>関東</option>
+                <option>中部</option>
+                <option>近畿</option>
+                <option>中国・四国</option>
+                <option>九州・沖縄</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>電話</td>
+            <td><input type="tel" name="tel"></td>
+          </tr>
+          <tr>
+            <td>メールアドレス</td>
+            <td><input type="email" name="email"></td>
+          </tr>
+          <tr>
+            <td>お問い合わせ種類</td>
+            <td>
+              <label><input type="radio" name="type" value="商品"> 商品について</label>
+              <label><input type="radio" name="type" value="従業員"> 従業員について</label>
+            </td>
+          </tr>
+          <tr>
+            <td>お問い合わせ内容</td>
+            <td><textarea name="detail" placeholder="ここに入力してください"></textarea></td>
+          </tr>
+        </table>
+        <div>
+          <input type="submit" value="送信">
+        </div>
+      </form>
+    </main>
+
+  </div>
+
+  <footer>
+    <!-- フッター（必要なら追加） -->
+  </footer>
+
 </body>
 </html>
+
