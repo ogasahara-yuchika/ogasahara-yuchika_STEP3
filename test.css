@@ -1,6 +1,7 @@
 /* ヘッダー */
 header {
-  width: 100%;
+  width: 800px;
+  margin: 0 auto;
   height: 100px;
   background-color: pink; /* 背景をピンクに */
 }
@@ -58,7 +59,8 @@ form div {
 
 /* フッター */
 footer {
-  width: 100%;
+  width: 800px;
+  margin: 0 auto;
   height: 80px;
   background-color: lightgray;
   clear: both;
