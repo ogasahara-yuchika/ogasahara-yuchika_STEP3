@@ -22,7 +22,7 @@ footer {
 }
 
 main {
-  flex:1;
+  hight:500px
   width: 600px;
   background-color: #fff0f5;
   padding: 10px;
@@ -42,6 +42,7 @@ table {
 }
 
 aside {
+  height:500px
   width: 200px;
   background-color: lavender;
   padding: 10px;
