@@ -6,13 +6,10 @@
   <link rel="stylesheet" href="test.css">  <!-- 自分のCSS -->
 </head>
 <body>
-
+  <div class="container"> <!-- 全体をまとめる箱 -->
   <header>
     <h2>世界一甘いお店</h2> <!-- ページのタイトル -->
   </header>
-
-  <div class="container"> <!-- 全体をまとめる箱 -->
-
     <aside> <!-- 左側のリンクメニュー -->
       <a href="#">● トップ</a><br>
       <a href="#">● 新着情報</a><br>
@@ -63,18 +60,14 @@
             <td>お問い合わせ内容</td>
             <td><textarea name="detail" placeholder="ここに入力してください"></textarea></td>
           </tr>
+          <tr>
+            <td><input type="submit" value="送信"></td>
+          </tr>
         </table>
-        <div>
-          <input type="submit" value="送信">
-        </div>
       </form>
     </main>
 
+    <footer></footer>
   </div>
-
-  <footer>
-    <!-- フッター（必要なら追加） -->
-  </footer>
-
 </body>
 </html>
