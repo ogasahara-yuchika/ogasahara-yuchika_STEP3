@@ -20,6 +20,7 @@ main {
   width: 600px;
   background-color: #fff0f5;
   padding: 10px;
+  float: left;
 }
 
 h2 {
@@ -38,6 +39,7 @@ aside {
   width: 200px;
   background-color: lavender;
   padding: 10px;
+  float: right;
 }
 
 aside a {
