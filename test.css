@@ -1,54 +1,59 @@
-/* 全体のレイアウト */
 .container {
-  display; flex;
   width: 800px;
-  margin: auto;
+  margin: 0 auto;           /* 横並びにする（asideとmain） */
 }
 
-/* ヘッダーとフッター */
 header {
   width: 100%;
   height: 100px;
-  background-color: pink;
+  background-color: pink; /* 背景をピンクに */
 }
 
 footer {
   width: 100%;
   height: 80px;
   background-color: lightgray;
+  clear: both;
 }
 
-/* サイドメニュー */
-aside {
-  width: 200px;
-  background-color: lavender;
-  padding: 0px;
+main {
+  width: 600px;
+  background-color: #fff0f5;
+  padding: 10px;
   float: left;
 }
 
-/* メインフォーム */
-main {
-  flex; 1;
-  background-color: #fff0f5;
+h2 {
+  text-align: center;      /* タイトルを中央寄せ */
+  padding: 30px 0;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+aside {
+  width: 200px;
+  background-color: lavender;
   padding: 10px;
   float: right;
 }
 
-/* 表のスタイル */
-table {
-  margin: 0 auto;
-  padding: 0;
-  border-collapse: collapse;
+aside a {
+  display: block;          /* リンクを縦に並べる */
+  margin: 10px 0;
+  text-decoration: none;
+  color: blue;
 }
 
-/* 送信ボタンのスタイル */
-form {
-  text-align: right; /* ボタンを右寄せ */
-  margin: 0;
-  padding: 0;
+aside a:hover {
+  color: red;              /* ホバー時に赤くなる */
 }
 
-form input[type="submit"] {
-  display: inline-block; /* 行内扱いで表に近づける */
-  margin-top: 0;         /* 表との隙間をゼロに */
+form div {
+  text-align: right;
+  margin-top: 10px;
 }
