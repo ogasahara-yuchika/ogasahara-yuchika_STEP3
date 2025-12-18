@@ -6,7 +6,9 @@
 header {
   width: 100%;
   height: 100px;
-  background-color: pink; /* 背景をピンクに */
+  background-color: pink;
+  text-alin: center;
+  line-higth: 100px
 }
 
 footer {
