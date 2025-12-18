@@ -1,8 +1,8 @@
 /* 全体のレイアウト */
 .container {
+  display; flex;
   width: 800px;
   margin: auto;
-  overflow: hidden; /* floatの高さを拾うため */
 }
 
 /* ヘッダーとフッター */
@@ -16,7 +16,6 @@ footer {
   width: 100%;
   height: 80px;
   background-color: lightgray;
-  clear: both;
 }
 
 /* サイドメニュー */
@@ -25,16 +24,14 @@ aside {
   background-color: lavender;
   padding: 0px;
   float: left;
-  min-height: 100%;
 }
 
 /* メインフォーム */
 main {
-  width: 600px;
+  flex; 1;
   background-color: #fff0f5;
   padding: 10px;
   float: right;
-  min-heigth: 100vh;
 }
 
 /* 表のスタイル */
