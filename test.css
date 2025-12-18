@@ -1,13 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
+/* 全体のレイアウト */
 .container {
-  display: flex;
   width: 800px;
   margin: auto;
+  overflow: hidden; /* floatの高さを拾うため */
 }
 
+/* ヘッダーとフッター */
 header {
   width: 100%;
   height: 100px;
@@ -21,6 +19,16 @@ footer {
   clear: both;
 }
 
+/* サイドメニュー */
+aside {
+  width: 200px;
+  background-color: lavender;
+  padding: 0px;
+  float: left;
+  min-height: 100%;
+}
+
+/* メインフォーム */
 main {
   width: 600px;
   background-color: #fff0f5;
@@ -28,42 +36,21 @@ main {
   float: right;
 }
 
-h2 {
-  text-align: center;
-  padding: 30px 0;
-  margin: 0;
+/* 表のスタイル */
+table {
+  margin: 0 auto;
+  padding: 0;
+  border-collapse: collapse;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0 auto;
+/* 送信ボタンのスタイル */
+form {
+  text-align: right; /* ボタンを右寄せ */
+  margin: 0;
   padding: 0;
 }
 
-aside {
-  width: 200px;
-  background-color: lavender;
-  padding: 0px;
-  float: left;
-}
-
-aside a {
-  display: block;
-  margin: 10px;
-  text-decoration: none;
-  color: blue;
-}
-
-aside a:hover {
-  color: red;
-}
-
-form {
-  text-align: right; /* フォーム内の要素を右寄せ */
-}
-
 form input[type="submit"] {
-  display: inline-block; /* 行内扱いにして右寄せが効くようにする */
-  margin-top: 0;         /* 表との間の余白をゼロに */
+  display: inline-block; /* 行内扱いで表に近づける */
+  margin-top: 0;         /* 表との隙間をゼロに */
 }
