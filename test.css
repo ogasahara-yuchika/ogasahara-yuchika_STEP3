@@ -23,7 +23,7 @@ footer {
 main {
   width: 600px;
   background-color: #fff0f5;
-  padding: 10px;
+  padding: 0px;
   float: right;
 }
 
@@ -42,13 +42,13 @@ table {
 aside {
   width: 200px;
   background-color: lavender;
-  padding: 10px;
+  padding: 0px;
   float: left;
 }
 
 aside a {
   display: block;
-  margin: 10px 0;
+  margin: 0px;
   text-decoration: none;
   color: blue;
 }
@@ -59,6 +59,6 @@ aside a:hover {
 
 form div {
   text-align: right;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
