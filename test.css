@@ -44,6 +44,7 @@ aside {
   background-color: lavender;
   padding: 0px;
   float: left;
+  min-height:100%
 }
 
 aside a {
