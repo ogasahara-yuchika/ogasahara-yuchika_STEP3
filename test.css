@@ -1,8 +1,25 @@
-/* ヘッダー */
+.container {
+  width: 800px;
+  margin: 0 auto;           /* 横並びにする（asideとmain） */
+}
+
 header {
   width: 100%;
   height: 100px;
   background-color: pink; /* 背景をピンクに */
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: lightgray;
+  clear: both;
+}
+
+main {
+  width: 600px;
+  background-color: #fff0f5;
+  padding: 10px;
 }
 
 h2 {
@@ -11,14 +28,12 @@ h2 {
   margin: 0;
 }
 
-/* 全体のレイアウト */
-.container {
-  display: flex;            /* 横幅を固定（中央寄せ） */
-  width: 800px;
-  margin: 0 auto;           /* 横並びにする（asideとmain） */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
 }
 
-/* サイドバー（リンク） */
 aside {
   width: 200px;
   background-color: lavender;
@@ -36,30 +51,7 @@ aside a:hover {
   color: red;              /* ホバー時に赤くなる */
 }
 
-/* メイン（フォーム） */
-main {
-  width: 600px;
-  background-color: #fff0f5;
-  padding: 10px;
-}
-
-/* テーブル中央配置 */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: auto;
-}
-
-/* 送信ボタン右寄せ */
 form div {
   text-align: right;
   margin-top: 10px;
-}
-
-/* フッター */
-footer {
-  width: 100%;
-  height: 80px;
-  background-color: lightgray;
-  clear: both;
 }
