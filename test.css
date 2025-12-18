@@ -57,8 +57,9 @@ aside a:hover {
   color: red;
 }
 
-form div {
-  text-align: right;
-  margin-top: 0px;
+form input[type="submit"] {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
 }
 
