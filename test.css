@@ -59,7 +59,8 @@ aside a:hover {
 }
 
 form input[type="submit"] {
-  display: block;
+  display: inline-block;
+  margin-top:0;
   margin-left: auto;
   margin-right: 0;
 }
