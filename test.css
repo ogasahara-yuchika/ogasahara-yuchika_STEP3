@@ -3,7 +3,7 @@
 }
 
 .container {
-  overflow: hidden;
+  display: flex;
   width: 800px;
   margin: 0 auto;
 }
@@ -22,10 +22,9 @@ footer {
 }
 
 main {
-  width: 600px;
+  flex: 1;
   background-color: #fff0f5;
-  padding: 0px;
-  float: right;
+  padding: 0;
 }
 
 h2 {
@@ -43,8 +42,6 @@ table {
 aside {
   width: 200px;
   background-color: lavender;
-  padding: 0px;
-  float: left;
 }
 
 aside a {
