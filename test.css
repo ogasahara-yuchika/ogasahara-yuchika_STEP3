@@ -58,3 +58,12 @@ aside a {
 aside a:hover {
   color: red;
 }
+
+form {
+  text-align: right; /* フォーム内の要素を右寄せ */
+}
+
+form input[type="submit"] {
+  display: inline-block; /* 行内扱いにして右寄せが効くようにする */
+  margin-top: 0;         /* 表との間の余白をゼロに */
+}
