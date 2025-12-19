@@ -1,70 +1,75 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>世界一甘いお店</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <header>
+    <h2>世界一甘いお店</h2>
+  </header>
 
-header, footer {
-  width: 800px;
-  height: 80px;
-  background-color: pink;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 80px;
-}
+  <div class="wrapper">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">トップ</a></li>
+        <li><a href="#">新着情報</a></li>
+        <li><a href="#">おすすめのスイーツ</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </aside>
 
-.wrapper {
-  width: 800px;
-  margin: 0 auto;
-  display: flex;
-}
+    <main class="content">
+      <form>
+        <table border="4">
+          <tr>
+            <td>お名前</td>
+            <td><input type="text" size="40"></td>
+          </tr>
+          <tr>
+            <td>近くのお店</td>
+            <td>
+              <select>
+                <option>北海道・東北</option>
+                <option>関東</option>
+                <option>中部</option>
+                <option>関西</option>
+                <option>中国・四国</option>
+                <option>九州・沖縄</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>電話</td>
+            <td><input type="text" size="40"></td>
+          </tr>
+            <td>電話番号</td>
+            <td><input type="text" size="40"></td>
+          </tr>
+          <tr>
+            <td>メールアドレス</td>
+            <td><input type="text" size="40"></td>
+          </tr>
+          <tr>
+            <td>お問い合わせ種別</td>
+            <td>
+              <input type="radio" name="type"> 商品について
+              <input type="radio" name="type"> 従業員について
+            </td>
+          </tr>
+          <tr>
+            <td>お問い合わせ内容</td>
+            <td><textarea cols="30" rows="5" placeholder="ここに入力してください"></textarea></td>
+          </tr>
+        </table>
+        <div class="submit-area">
+          <input type="submit" value="送信">
+        </div>
+      </form>
+    </main>
+  </div>
 
-.sidebar {
-  width: 200px;
-  height: 400px;
-  background-color: lavender;
-  padding: 10px;
-}
-
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sidebar li {
-  margin-bottom: 10px;
-}
-
-.sidebar a {
-  display: block;
-  text-decoration: none;
-  color: black;
-}
-
-.content {
-  width: 600px;
-  height: 400px;
-  background-color: #fff0f5;
-  padding: 20px;
-}
-
-table {
-  margin: 0 auto;
-  border-collapse: collapse;
-}
-
-td {
-  padding: 8px;
-}
-
-.submit-area {
-  text-align: right;
-  margin-top: 10px;
-}
-
-footer {
-  height: 60px;
-  background-color: pink;
-  text-align: center;
-  line-height: 60px;
-}
+  <footer></footer>
+</body>
+</html>
