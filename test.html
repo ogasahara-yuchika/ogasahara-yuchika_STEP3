@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>世界一甘いお店</title>
-  <link rel="stylesheet" href="test.css">  <!-- 自分のCSS -->
+  <link rel="stylesheet" href="test.css">
 </head>
   
 <body>
-  <div class="container"> <!-- 全体をまとめる箱 -->
-    <header>
-      <h2>世界一甘いお店</h2> <!-- ページのタイトル -->
-    </header>
-    <aside> <!-- 左側のリンクメニュー -->
-      <a href="#">● トップ</a><br>
-      <a href="#">● 新着情報</a><br>
-      <a href="#">● おすすめのスイーツ</a><br>
-      <a href="#">● お問い合わせ</a>
+  <header><h2>世界一甘いお店</h2></header>
+  <div class="container">
+    <aside class="sidebar">
+    <ul>
+      <li><a href="#">● トップ</a></li>
+      <li><a href="#">● 新着情報</a></li>
+      <li><a href="#">● おすすめのスイーツ</a></li>
+      <li><a href="#">● お問い合わせ</a></li>
+    </ul>
     </aside>
-    <main> <!-- 右側のメインコンテンツ -->
-      <form>
+    
+    <main class="content">
         <table border="4">
           <tr>
             <td>お名前</td>
@@ -64,7 +64,9 @@
           <input type="submit" value="送信">
         </form>
     </main>
-  <footer></footer>
 </div>
+
+<footer></footer>
+</body>
 </body>
 </html>
