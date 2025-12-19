@@ -5,33 +5,36 @@
   <title>世界一甘いお店</title>
   <link rel="stylesheet" href="test.css">
 </head>
-  
 <body>
-  <header class="weapper"><h2>世界一甘いお店</h2></header>
-  <div class="wrapper container">
+  <header>
+    <h2>世界一甘いお店</h2>
+  </header>
+
+  <div class="wrapper">
     <aside class="sidebar">
-    <ul>
-      <li><a href="#">トップ</a></li>
-      <li><a href="#">新着情報</a></li>
-      <li><a href="#">おすすめのスイーツ</a></li>
-      <li><a href="#">お問い合わせ</a></li>
-    </ul>
+      <ul>
+        <li><a href="#">トップ</a></li>
+        <li><a href="#">新着情報</a></li>
+        <li><a href="#">おすすめのスイーツ</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
     </aside>
-    
+
     <main class="content">
+      <form>
         <table border="4">
           <tr>
             <td>お名前</td>
-            <td><input type="text" name="name"></td>
+            <td><input type="text" size="40"></td>
           </tr>
           <tr>
             <td>近くのお店</td>
             <td>
-              <select name="area">
+              <select>
                 <option>北海道・東北</option>
                 <option>関東</option>
                 <option>中部</option>
-                <option>近畿</option>
+                <option>関西</option>
                 <option>中国・四国</option>
                 <option>九州・沖縄</option>
               </select>
@@ -39,34 +42,37 @@
           </tr>
           <tr>
             <td>電話</td>
-            <td><input type="tel" name="tel"></td>
+            <td><input type="text" size="40"></td>
           </tr>
           <tr>
             <td>電話番号</td>
-            <td><input type="tel" name="tel"></td>
+            <td><input type="text" size="40"></td>
           </tr>
           <tr>
             <td>メールアドレス</td>
-            <td><input type="email" name="email"></td>
+            <td><input type="text" size="40"></td>
           </tr>
           <tr>
-            <td>お問い合わせ種類</td>
+            <td>お問い合わせ種別</td>
             <td>
-              <label><input type="radio" name="type" value="商品"> 商品について</label>
-              <label><input type="radio" name="type" value="従業員"> 従業員について</label>
+              <input type="radio" name="type"> 商品について
+              <input type="radio" name="type"> 従業員について
             </td>
           </tr>
           <tr>
             <td>お問い合わせ内容</td>
-            <td><textarea name="detail" placeholder="ここに入力してください"></textarea></td>
+            <td><textarea cols="30" rows="5" placeholder="ここに入力してください"></textarea></td>
           </tr>
         </table>
+        <div class="submit-area">
           <input type="submit" value="送信">
-        </form>
+        </div>
+      </form>
     </main>
-</div>
+  </div>
 
-<footer class="wrapper"></footer>
-</body>
+  <footer>
+    <p>世界一甘いお店</p>
+  </footer>
 </body>
 </html>
