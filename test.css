@@ -4,8 +4,10 @@
 
 .container {
   display: flex;
-  width: 800px;
+  flex-direction:row;
+  width:800px;
   margin: 0 auto;
+  aling-items:stretch;
 }
 
 header {
